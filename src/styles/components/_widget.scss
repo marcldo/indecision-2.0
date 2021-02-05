@@ -2,12 +2,14 @@
 .widget {
   background: $light-blue;
   margin-bottom: $xl-size;
+  padding: $l-size;
+  border-radius: 3.5rem;
 }
 
 //Widget Message
 .widget__message {
-  border-bottom: 1px solid lighten($light-blue, 10%);
-  color: $off-white;
+  border-bottom: 1px solid lighten($purple, 10%);
+  color: $off-black;
   margin: 0;
   padding: $l-size;
   text-align: center;
@@ -15,11 +17,10 @@
 
 //Widget Header
 .widget-header {
-  background: $blue;
   color: $off-white;
   display: flex;
   justify-content: space-between;
-  padding: $m-size;
+  padding: $m-size 0;
 }
 
 .widget-header__title {

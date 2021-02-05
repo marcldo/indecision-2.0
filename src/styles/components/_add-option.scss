@@ -1,3 +1,19 @@
+//Add Option Container
+.add-option-container {
+  background: $blue;
+  padding: $m-size $xl-size;
+  border-radius: 3.5rem;
+}
+.add-option-container > hr {
+  border: 1px solid $purple;
+  margin: $m-size 0;
+}
+
+//Add Option Title
+.add-option-title {
+  color: white;
+}
+
 //Add Option Error
 .add-option-error {
   color: $off-white;
@@ -10,25 +26,26 @@
 .add-option {
   display: flex;
   flex-direction: column;
-  padding: $m-size;
 }
 
 .add-option__input {
-  background: $dark-blue;
+  background: $blue;
   border: none;
-  color: $off-white;
-  border-bottom: .3rem solid darken($dark-blue, 10%);
+  color: white;
   flex-grow: 1;
-  margin: 0 0 $s-size 0;
+  margin: 0 0 0 $m-size;
   padding: $s-size;
+}
+
+.add-option__input::placeholder {
+  color: white;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
 }
 
 @media (min-width: $desktop-breakpoint) {
   .add-option {
     flex-direction: row;
-  }
-
-  .add-option__input {
-    margin: 0 $s-size 0 0;
   }
 }
