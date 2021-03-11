@@ -3,29 +3,35 @@
   background: $blue;
   padding: $m-size $xl-size;
   border-radius: 3.5rem;
+  margin-top: 6rem;
 }
 .add-option-container > hr {
   border: 1px solid $purple;
   margin: $m-size 0;
 }
 
+.add-option-title-container {
+  display: inline-flex;
+}
+
 //Add Option Title
 .add-option-title {
   color: white;
+  font-size: $s-size;
 }
 
 //Add Option Error
 .add-option-error {
   color: $off-white;
-  font-style: italic;
-  margin: $m-size 0 0 0;
-  padding: 0 $m-size;
+  font-style: italic; 
+  margin-left: 5px;
+  font-size: $s-size;
 }
 
 //Add Option 
 .add-option {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .add-option__input {
@@ -33,19 +39,29 @@
   border: none;
   color: white;
   flex-grow: 1;
-  margin: 0 0 0 $m-size;
-  padding: $s-size;
+  margin: 0 0 0 $s-size;
 }
 
 .add-option__input::placeholder {
   color: white;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-size: 2.4rem;
+  font-size: $s-size;
   font-weight: 300;
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .add-option {
-    flex-direction: row;
+  .add-option-error {
+    font-size: $m-size;
+    margin-left: $m-size;
+  }
+  .add-option__input::placeholder {
+    font-size: 2.4rem;
+  }
+  .add-option__input {
+    padding: $s-size;
+    margin: 0 0 0 $m-size;
+  }
+  .add-option-title {
+    font-size: $m-size;
   }
 }

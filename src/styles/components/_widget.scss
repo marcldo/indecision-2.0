@@ -3,7 +3,7 @@
   background: $light-blue;
   margin-bottom: $xl-size;
   padding: $l-size;
-  border-radius: 3.5rem;
+  border-radius: $s-size;
 }
 
 //Widget Message
@@ -25,4 +25,10 @@
 
 .widget-header__title {
   margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .widget {
+    border-radius: 3.5rem;
+  }
 }
